@@ -1,0 +1,10 @@
+switch($data->Statut){
+					case 'SECRETAIRE': header("location:" . "formulaire3.php");
+					exit;
+					break;
+					
+					case 'MEDECIN': header("location:" . "formulaire33.php");
+					exit;
+					break;
+					
+				}
