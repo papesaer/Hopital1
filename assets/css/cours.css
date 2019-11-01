@@ -1,7 +1,9 @@
-
+#page{
+    background-color: rgb(247, 248, 248);
+}
 header{
     display: inline-block;
-    background-color: rgb(50, 83, 42);
+    background-color: rgb(7, 71, 55);
     width: 1280px;
     height: 110px;
     text-align: center;
@@ -13,82 +15,110 @@ header{
     height: 90px;
     text-align: center;
     font-size:-20px;
-    
-    
-   
-    
+}
+#principal h2
+{
+    color: rgb(0, 14, 14);
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 70px;
+}
+#principal h2 span
+{
+    color: rgb(248, 252, 251);
+    background-color: rgb(7, 71, 55);
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+}
+#principal p{
+    color: rgb(0, 14, 14);
+    font-weight: bold;
+    font-size: 20px;
 }
 #menu1{
-    width: 100px;
+    width: 70px;
     height: 485px;
-    background-color: orange;
+    background-color: rgb(0, 14, 14);
     float: left;
     
 }
 #menu2{
-    width: 100px;
+    width: 70px;
     height: 485px;
-    background-color: orange;
+    background-color: rgb(0, 14, 14);
     float: right;
     
     padding-left: 10px;
 }
 footer{
     display: inline-block;
-    background-color: rgb(55, 110, 55);
+    background-color:  rgb(7, 71, 55);
     width: 1300px;
-    height: 110px;
-    margin-top: 0%;
+    height: 80px;
+    margin-top: 11%;
     text-align: center;
+}
+footer h4{
+    color:rgb(248, 252, 251);;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 18px;
 }
 #carre{
     display: inline-block;
     text-align: center;
-    
-   
-    width: 170px;
+    width: 435px;
+    height: 120px;
     padding: 10px 5px;
     font-size:30px;
-    padding-top: 30px;
-    margin-left: -10%;
+    padding-top: 40px;
+    margin-left: 115px;
     padding: 5px;
-    
-   
+    background-color: rgb(0, 14, 14);
+    border: 1px solid rgb(0, 14, 14);
+}
+#carre p{ 
+    font-size: 15px;
+    color: rgb(247, 248, 248);
+    text-decoration: blink underline;
 }
 .gauche{
    
-    border: 2px solid rgb(197, 26, 26);
-    padding: 8px 35px;
+    border: 2px solid rgb(7, 71, 55);
+    padding: 10px 40px;
 }
 .droite{
-    border: 2px solid rgb(197, 26, 26);
-    padding: 8px 35px;
+    border: 2px solid rgb(7, 71, 55);
+    padding: 10px 40px;
 }
 img{
     width: 90px;
 }
 .btn.btn-primary {
     font-size: 16px; 
-    border: 2px solid #f7941d; 
+    border: 2px solid rgb(7, 71, 55); 
     background:transparent;
     padding:15px 40px; 
+    margin: 10px;
     text-transform:uppercase;
     border-radius:30px;
-    color:#f7941d;
+    background-color: rgb(7, 71, 55);
  }
   
  .btn.btn-primary:hover {
-     background:#ffb153;
+     background:#f5f7f6;
      border-radius:0;
-     border: 2px solid #ffb153;
-     color:white;
+     border: 2px solid rgb(7, 71, 55);
+     color:black;
  }
-#agenda
-{
-    display: inline-block;
-    border-collapse: collapse;
-    background-color: rgb(90, 241, 191);
+button a{
+    color:rgb(248, 252, 251);
+    font-weight: bold;
+    text-decoration: underline;
 }
-body{
-    background-image: url(bureau.jpeg);
+button a:hover{
+    color: #000;
 }
+
