@@ -4,13 +4,14 @@ session_start();
 <!DOCTYPE>
 <html lang="en">
   <head>
+  
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymou">
 
     <title>Hello, world!</title>
   </head>
@@ -36,23 +37,15 @@ session_start();
   <div class="card">
   <div>
                             <h1 style="color:red;">GESTION DES RDV</h1><br>
-                            <p>BIENVENNUE DANS LE SERVICE HEMATOLOGIE</p>
-                            <p>R-bonjour</p>
-                              <p>
-                              <?php echo $_SESSION['prenom_inscrit'].''.$_SESSION['Nom_inscrit'];?><br>
-                              </p> 
-                               
-                                <form action = "verif-form.php" method = "get" style=" position: relative;left:550px;top:-40px;">
-                                <input type = "search" name = "terme">
-                                 <input type = "submit" name = "s" value = "Rechercher">
+                            <p>BIENVENNUE DANS LE SERVICE  <p>
+                             
                                  <INPUT TYPE="button"   Value="DECONNETION" onclick="window.location='../index.php';"> 
 
 
                                
 
 
-                                  <INPUT TYPE="button"  Value="Voir agenda" onclick="window.location='jour_indispo.php';" 
-                                  style=" left:30px;top:-1px;">
+                                 
                                   
                                 </form>
                             
@@ -76,7 +69,7 @@ session_start();
   <div class="form-style-3">
 
 
- <form method="POST" id="formulaire" action="controle3.php"> 
+ <form method="POST" id="formulaire" action="../controller/controle3.php"> 
   
  <fieldset><legend>Le patient doit etre enregistrer
      <div class="form-groupe">
@@ -168,19 +161,37 @@ session_start();
   <td>
   <div   class="form-groupe">
 
-  <label>heure debut rdv 
-    <input id="appt-time" type="time" name="Heured_RDV"min="08:00" max="12:00">
   
-    </label>    
-  </td>
-  </tr>
-  <tr>
-  <td>
-  <div class="form-groupe">
-  <label>heure fin rdv 
-    <input id="appt-time" type="time" name="Heuref_RDV"min="08:00" max="12:00">
-  
-    </label> 
+  <label for="utilise">Heure du rdv : </label>
+   <select name="Heured_RDV"  class="form-control">
+   <option value=""> 08:00</option>
+   <option value=""> 08:15</option>
+   <option value=""> 08:30</option>
+   <option value=""> 08:45</option>
+   <option value=""> 09:00</option>
+   <option value=""> 09:15</option>
+   <option value=""> 09:30</option>
+   <option value=""> 09:45</option>
+   <option value=""> 10:00</option>
+   <option value=""> 10:15</option>
+   <option value=""> 10:30</option>
+   <option value=""> 10:45</option>
+   <option value=""> 11:00</option>
+   <option value=""> 11:15</option>
+   <option value=""> 11:30</option>
+   <option value=""> 11:45</option>
+   <option value=""> 12:00</option>
+   <option value=""> 15:00</option>
+   <option value=""> 15:15</option>
+   <option value=""> 15:30</option>
+   <option value=""> 15:45</option>
+   <option value=""> 16:00</option>
+   <option value=""> 16:15</option>
+   <option value=""> 16:30</option>
+   <option value=""> 16:45</option>
+   <option value=""> 17:00</option>
+   
+   </select>
   </td>
   <td>
   <div class="form-groupe">

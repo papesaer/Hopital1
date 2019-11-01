@@ -34,7 +34,7 @@ $V_RDV_Patients_Inscrits = $query->fetchAll(PDO::FETCH_OBJ);
     <title>Hello, world!</title>
   </head>
   <?php
-  require_once 'heder.php';
+  require_once 'header.php';
   ?><br><br><br><br><br><br><br><br>
 <body class="bg-info">
 

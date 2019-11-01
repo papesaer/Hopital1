@@ -24,7 +24,7 @@ padding: 0;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-  background: rgb(7, 71, 51);
+  background: orange;
   text-align: center;
 }
 .box input[type = "text"],.box input[type = "password"]{
@@ -80,35 +80,17 @@ button {
 
 <body  class="bg-info">
 
-<header>
-            <img src="../assets/image/clendrier.jpeg" style="float:left;">
-  
-            <img src="../assets/image/medicin.jpeg" style="float:right;">
-                    
-           
-   </header><br><br><br>
+
   
                 
 <h3>INSCRIPTION FORM</h3>
   
-<div>
-                
-<form class="box" action="../controller/controle2.php" method="POST">
 
-<div id="DivClignotante" style="visibility:visible; text-align: center; color:orange;">
-                    <h1>H_PLANNING</h1>
-                    </div>
-<script type="text/javascript">
-                var clignotement = function(){
-                 if (document.getElementById('DivClignotante').style.visibility=='visible'){
-                 document.getElementById('DivClignotante').style.visibility='hidden';
-                }
-                 else{
-                 document.getElementById('DivClignotante').style.visibility='visible';
-                 }
-                };
-                periode = setInterval(clignotement, 800);
-            </script>
+                
+<form class="box" action="controle2.php" method="POST">
+
+
+
   
     <table>
         <tr>
@@ -162,7 +144,7 @@ button {
   </table>
 </form>
 
-</div>
+   
 
 </body>
 

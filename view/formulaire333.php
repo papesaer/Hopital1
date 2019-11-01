@@ -42,7 +42,7 @@ session_start();
                               <?php echo $_SESSION['prenom_inscrit'].''.$_SESSION['Nom_inscrit'];?><br>
                               </p> 
                                
-                                <form action = "verif-form.php" method = "get" style=" position: relative;left:550px;top:-40px;">
+                                <form action = "../controller/verif-form333.php" method = "get" style=" position: relative;left:550px;top:-40px;">
                                 <input type = "search" name = "terme">
                                  <input type = "submit" name = "s" value = "Rechercher">
                                  <INPUT TYPE="button"   Value="DECONNETION" onclick="window.location='../index.php';"> 
@@ -167,47 +167,10 @@ session_start();
     <div   class="form-groupe">
 
      <label for="utilise">Heure du rdv : </label>
-   <select name="Heured_RDV"  class="form-control">
-   <option value=""> 08:00</option>
-   <option value=""> 08:15</option>
-   <option value=""> 08:30</option>
-   <option value=""> 08:45</option>
-   <option value=""> 09:00</option>
-   <option value=""> 09:15</option>
-   <option value=""> 09:30</option>
-   <option value=""> 09:45</option>
-   <option value=""> 10:00</option>
-   <option value=""> 10:15</option>
-   <option value=""> 10:30</option>
-   <option value=""> 10:45</option>
-   <option value=""> 11:00</option>
-   <option value=""> 11:15</option>
-   <option value=""> 11:30</option>
-   <option value=""> 11:45</option>
-   <option value=""> 12:00</option>
-   <option value=""> 15:00</option>
-   <option value=""> 15:15</option>
-   <option value=""> 15:30</option>
-   <option value=""> 15:45</option>
-   <option value=""> 16:00</option>
-   <option value=""> 16:15</option>
-   <option value=""> 16:30</option>
-   <option value=""> 16:45</option>
-   <option value=""> 17:00</option>
-   
-   </select>  
+     <input type="time" name="Heured_RDV" class="form-control" max="17" min="08">
   </td>
   </tr>
-  <tr>
-  <td>
-  <div class="form-groupe">
   
-  </td>
-  <td>
-  <div class="form-groupe">
-  
-  </td>
-  </tr>
   <tr>
   <td>
   <div class="form-groupe">

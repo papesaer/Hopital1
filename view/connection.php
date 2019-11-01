@@ -16,15 +16,17 @@ body {font-family: sans-serif;
 
 margin: 0;
 padding: 0;
+color: #212529;
 }
-.box{
+.box{Enter Username
+
   width:500px;
   padding: 40px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-  background: orange;
+  background: rgb(7, 71, 51);
   text-align: center;
 }
 .box input[type = "text"],.box input[type = "password"]{
@@ -37,7 +39,7 @@ padding: 0;
   padding: 14px 10px; 
   width: 100px;
   outline: none;
-  color: black;
+  color: orange;
   border-radius: 24px;
   transition: 0.25s;
 
@@ -100,7 +102,7 @@ button {
             </script>
    </header>
  
-  
+   
   
    
 <h1>Login Form</h1>
@@ -122,7 +124,7 @@ button {
 
   
     <label><p>Username</p></label>
-    <input type="text" placeholder="Enter Username" name="Logine" maxlength="8">
+    <input type="text" placeholder="Enter Username" name="Logine" maxlength="10">
     <i class="fas fa-user-plus"></i>
     <label><p>Password</p></label>
     <input type="password" placeholder="Enter Password" name="Mot_pass" maxlength="10">

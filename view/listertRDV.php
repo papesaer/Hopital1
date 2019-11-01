@@ -34,7 +34,7 @@ $V_RDV_Patients_Inscrits = $query->fetchAll(PDO::FETCH_OBJ);
     <title>Hello, world!</title>
   </head>
   <?php
-  require_once 'heder.php';
+  require_once 'header1.php';
   ?><br><br><br><br><br><br><br><br>
 <body class="bg-info">
 
@@ -62,7 +62,7 @@ $V_RDV_Patients_Inscrits = $query->fetchAll(PDO::FETCH_OBJ);
                                        
                                        <th>Heure debut RDV</th>
 
-                                       <th>Heure fin RDV</th>
+                                       
 
                                        <th>Nom RDV </th>
 
@@ -91,7 +91,7 @@ $V_RDV_Patients_Inscrits = $query->fetchAll(PDO::FETCH_OBJ);
                             <td><?= $RDV->Tel_patient; ?></td>
                             <td><?= $RDV->Date_RDV; ?></td>
                             <td><?= $RDV->Heured_RDV; ?></td>
-                            <td><?= $RDV->Heuref_RDV; ?></td>
+                            
                             <td><?= $RDV->Nom_RDV; ?></td>
                             <td><?= $RDV->Domaine; ?></td>
                             <td><?= $RDV->Nom_inscrit; ?></td>

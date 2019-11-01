@@ -12,12 +12,11 @@
   </head>
 <body>
 <header>
-            <img src="./view/assets/image/cons3.jpeg" style="float:left;">
+            <img src="./assets/image/CONS.jpeg" style="float:left;">
   
-            <img src="CONS.jpeg" style="float:right;">
-
-            <div id="DivClignotante" style="visibility:visible; text-align: center; color:rgb(248, 252, 251);">
-<br><h1>H_PLANNING</h1>
+            <img src="./assets/image/cons3.jpeg" style="float:right;">
+                    <div id="DivClignotante" style="visibility:visible; text-align: center; color:White;">
+<h1>H_PLANNING</h1>
                     </div>
             <script type="text/javascript">
                 var clignotement = function(){

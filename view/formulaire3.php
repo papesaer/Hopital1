@@ -4,13 +4,14 @@ session_start();
 <!DOCTYPE>
 <html lang="en">
   <head>
+  
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymou">
 
     <title>Hello, world!</title>
   </head>
@@ -34,15 +35,14 @@ session_start();
 
   <div class="container">
   <div class="card">
-  <div>
-                            <h1 style="color:red;">GESTION DES RDV</h1><br>
+  <div><h1 style="color:red;">GESTION DES RDV</h1><br>
                             <p>BIENVENNUE DANS LE SERVICE HEMATOLOGIE</p>
                             <p>R-bonjour</p>
                               <p>
                               <?php echo $_SESSION['prenom_inscrit'].''.$_SESSION['Nom_inscrit'];?><br>
                               </p> 
                                
-                                <form action = "verif-form.php" method = "get" style=" position: relative;left:550px;top:-40px;">
+                                <form action = "../controller/verif-form.php" method = "get" style=" position: relative;left:550px;top:-40px;">
                                 <input type = "search" name = "terme">
                                  <input type = "submit" name = "s" value = "Rechercher">
                                  <INPUT TYPE="button"   Value="DECONNETION" onclick="window.location='../index.php';"> 
@@ -75,8 +75,8 @@ session_start();
 <div class="row justify-content-center">
   <div class="form-style-3">
 
-
- <form method="POST" id="formulaire" action="../controller/controle3.php"> 
+  <div id=identifiant_de_ma_div>
+        <form method="POST" id="formulaire" action="../controller/controle3.php"> 
   
  <fieldset><legend>Le patient doit etre enregistrer
      <div class="form-groupe">
@@ -169,36 +169,11 @@ session_start();
   <div   class="form-groupe">
 
   
-  <label for="utilise">Heure du rdv : </label>
-   <select name="Heured_RDV"  class="form-control">
-   <option value=""> 08:00</option>
-   <option value=""> 08:15</option>
-   <option value=""> 08:30</option>
-   <option value=""> 08:45</option>
-   <option value=""> 09:00</option>
-   <option value=""> 09:15</option>
-   <option value=""> 09:30</option>
-   <option value=""> 09:45</option>
-   <option value=""> 10:00</option>
-   <option value=""> 10:15</option>
-   <option value=""> 10:30</option>
-   <option value=""> 10:45</option>
-   <option value=""> 11:00</option>
-   <option value=""> 11:15</option>
-   <option value=""> 11:30</option>
-   <option value=""> 11:45</option>
-   <option value=""> 12:00</option>
-   <option value=""> 15:00</option>
-   <option value=""> 15:15</option>
-   <option value=""> 15:30</option>
-   <option value=""> 15:45</option>
-   <option value=""> 16:00</option>
-   <option value=""> 16:15</option>
-   <option value=""> 16:30</option>
-   <option value=""> 16:45</option>
-   <option value=""> 17:00</option>
+  <label for="utilise">Heure du rdv  
+  <input type="time" name="Heured_RDV" class="form-control"  max="17h" min="08h">
+
+  </label>
    
-   </select>
   </td>
   <td>
   <div class="form-groupe">
@@ -232,6 +207,7 @@ session_start();
    </div>
    </fieldset>
     </form>
+    </div>
     </div>
     </div>
 </div>
