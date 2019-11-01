@@ -45,8 +45,8 @@ if (isset($_GET["s"]) AND $_GET["s"] == "Rechercher")
  
 <body>
 <?php
-  require_once 'heder.php';
-  ?>
+require_once '../view/header1.php';
+?>
 <TABLE BORDER="1">
   <CAPTION> liste des RDV</CAPTION>
   <tr>

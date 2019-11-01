@@ -216,19 +216,13 @@ session_start();
   <div   class="form-groupe">
 
   <label>heure debut rdv 
-    <input id="appt-time" type="time" name="Heured_RDV"min="08:00" max="12:00">
+    <input id="appt-time" type="time" name="Heured_RDV"min="08:00" max="17:00">
   
     </label>    
   </td>
   </tr>
   <tr>
-  <td>
-  <div class="form-groupe">
-  <label>heure fin rdv 
-    <input id="appt-time" type="time" name="Heuref_RDV"min="08:00" max="12:00">
-  
-    </label> 
-  </td>
+
   <td>
   <div class="form-groupe">
   
@@ -256,7 +250,7 @@ session_start();
           
 
 
-  <button type="submit" class="btn btn-info"name="valider">save</button>
+  <button type="submit" class="btn btn-info"name="valider"><a href="../view/formulaire3.php">Ajouter</a></button>
   <button type="submit" class="btn btn-info"name="afficher"><a href="../view/listertRDV1.php">afficher</button>
    </div>
    </fieldset>

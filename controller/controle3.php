@@ -213,35 +213,7 @@ session_start();
   <td>
   <div   class="form-groupe">
   <label for="utilise">Heure debut : </label>
-   <select name="Heured_RDV"  class="form-control">
-   <option value=""> 08:00</option>
-   <option value=""> 08:15</option>
-   <option value=""> 08:30</option>
-   <option value=""> 08:45</option>
-   <option value=""> 09:00</option>
-   <option value=""> 09:15</option>
-   <option value=""> 09:30</option>
-   <option value=""> 09:45</option>
-   <option value=""> 10:00</option>
-   <option value=""> 10:15</option>
-   <option value=""> 10:30</option>
-   <option value=""> 10:45</option>
-   <option value=""> 11:00</option>
-   <option value=""> 11:15</option>
-   <option value=""> 11:30</option>
-   <option value=""> 11:45</option>
-   <option value=""> 12:00</option>
-   <option value=""> 15:00</option>
-   <option value=""> 15:15</option>
-   <option value=""> 15:30</option>
-   <option value=""> 15:45</option>
-   <option value=""> 16:00</option>
-   <option value=""> 16:15</option>
-   <option value=""> 16:30</option>
-   <option value=""> 16:45</option>
-   <option value=""> 17:00</option>
-   
-   </select>
+  <input type="time" name="Dated_RDV" class="form-control"  max="17" min="08">
   </div>
   </td>
   </tr>
@@ -268,7 +240,7 @@ session_start();
           
 
 
-  <button type="submit" class="btn btn-info"name="valider">save</button>
+  <button type="submit" class="btn btn-info"name="valider"><a href="../view/formulaire3.php">Ajouter</a></button>
   <button type="submit" class="btn btn-info"name="afficher"><a href="../view/listertRDV.php">afficher</button>
    </div>
    </fieldset>

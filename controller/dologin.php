@@ -4,7 +4,7 @@ if(empty($_POST['Logine'])){
     $msg = "Login ou mot de passe doivent etre rempli";
 				
     //Redirection
-    header("location:" . "connection.php?msg=$msg");
+    header("location:" . "../view/connection.php?msg=$msg");
     
     
     exit;
@@ -15,7 +15,7 @@ if(!empty($_POST['Logine']) && $data->active != 1 || $data->active !=2 || $data-
     $msg = "Le mot de pass et le login doivent etre existant";
 				
     //Redirection
-    header("location:" . "connection.php?msg=$msg");
+    header("location:" . "../view/connection.php?msg=$msg");
     
     
 
